@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web site parser</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            font-family: sans-serif;
+        }
+        .title > h2 {
+            text-align: center;
+            font-size: 36px;
+        }
+        .input {
+            text-align: center;
+        }
+        input {
+            width: 300px;
+        }
+        button {
+            margin-left: 5px;
+            background-color: transparent;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        input, button {
+            font-family: inherit;
+            font-size: 20px;
+            padding: 4px;
+        }
+        .input-link, .input-link:visited {
+            margin-left: 5px;
+            padding: 5px;
+            font-size: 20px;
+            color: inherit;
+            text-decoration: dotted;
+            border: 1px solid black;
+        }
+        .input-link:hover, .input-link:focus {
+            cursor: pointer;
+        }
+        .output {
+            font-family: monospace;
+            font-size: 18px;
+            word-break: break-word;
+        }
+        .output-delimeter {
+            font-weight: bold;
+            font-size: 22px;
+            text-align:center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Web site parser</h2>
+        </div>
+        <div class="input">
+            <form action="/parse" method="post">
+                <input type="text" name="url" id="url" placeholder="Your link...">
+                <button type="submit">Go!</button>
+                <a class="input-link" href="/">Clear</a>
+            </form>
+        </div>
+        <div class="output">
+            <%- data %>
+        </div>
+    </div>
+</body>
+</html>

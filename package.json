@@ -1,0 +1,30 @@
+{
+  "name": "script-parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "dj.active.17@gmail.com",
+    "name": "Ilya Soloveychik",
+    "url": "https://github.com/thesiv95"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesiv95/script-parser"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  }
+}
